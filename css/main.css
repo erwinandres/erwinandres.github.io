@@ -15,3 +15,54 @@ body {
 a {
   background: transparent;
 }
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* MAIN */
+.pageWrapper {
+  padding: .5em 1em;
+}
+
+.pageHeader {
+  margin-bottom: 1.5rem;
+}
+
+.pageHeader:before,
+.pageHeader:after {
+  line-height: 1.5;
+  color: #ccc;
+}
+
+.pageHeader:before {
+  content: "<header>"
+}
+
+.pageHeader:after {
+  content: "</header>"
+}
+
+.pageHeader-title {
+  margin: 0;
+  font-size: 3em;
+  line-height: 1;
+}
+
+.pageHeader-description {
+  margin: 0;
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+.mainContent {
+  max-width: 600px;
+}
