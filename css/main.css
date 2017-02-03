@@ -199,3 +199,24 @@ a:focus {
 .skills-progressBar {
   color: #BA53DE;
 }
+
+.projectsList {
+  list-style: none;
+  margin:0;
+}
+
+.projectsList-item {
+  margin-bottom: 1.5rem;
+}
+
+.projectsList-item:last-child {
+  margin-bottom: 0;
+}
+
+.project-title {
+  margin-bottom: 0;
+}
+
+.project-tags {
+  font-style: italic;
+}
