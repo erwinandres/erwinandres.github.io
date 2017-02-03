@@ -12,22 +12,99 @@ body {
   margin:0;
 }
 
+/**
+ * textCSS
+ * By Erwin Larios.
+ *
+ * A starting point to styling text.
+ */
+p, h1, h2, h3, h4, h5, h6, ul{
+  margin: 0;
+  padding: 0;
+}
+
+/** Paragraphs */
+p {
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+/** Headings */
+ h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 2.5em;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 2em;
+  line-height: 1.5;
+}
+
+h4 {
+  font-size: 1.5em;
+  line-height: 1;
+}
+
+h5 {
+  font-size: 1.2em;
+  line-height: 1.26;
+  margin-bottom: 0;
+}
+
+h6 {
+  font-size: 1em;
+  font-style: italic;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+/** Lists */
+ul {
+  margin: 0 0 0 2rem;
+}
+
+li {
+  line-height: 1.5;
+}
+
+ul ul {
+  margin: 0 0 0 4rem;
+}
+
+/** Links */
 a {
-  background: transparent;
-}
-
-a:link {
-  text-decoration: none;
-}
-
-a:link,
-a:visited {
   color: #4D6DE3;
+  background: transparent;
+  text-decoration: none;
 }
 
 a:hover {
   color: #000;
   background-color: #4AE3B5;
+}
+
+a:active,
+a:focus {
+  position: static;
+}
+
+a:focus {
+  outline: thin dotted;
 }
 
 /* MAIN */
@@ -81,6 +158,14 @@ a:hover {
 
 .mainContent:after {
   content: "</main>";
+}
+
+.mainContent-section {
+  margin-bottom: 3rem;
+}
+
+.mainContent-section:last-child {
+  margin-bottom: 0;
 }
 
 .section:before,
