@@ -10,6 +10,7 @@ html {
 body {
   line-height: 1;
   margin:0;
+  color:#000;
 }
 
 /**
@@ -88,14 +89,14 @@ ul ul {
 
 /** Links */
 a {
-  color: #4D6DE3;
+  color: #007acd;
   background: transparent;
   text-decoration: none;
 }
 
 a:hover {
   color: #000;
-  background-color: #4AE3B5;
+  background-color: #00FDDC;
 }
 
 a:active,
@@ -108,18 +109,24 @@ a:focus {
 }
 
 /* MAIN */
+.pageHeader:before,
+.pageHeader:after,
+.mainContent:before,
+.mainContent:after,
+.section:before,
+.section:after,
+.section-title:before,
+.section-title:after {
+  line-height: 1.5;
+  color: #ac6600;
+}
+
 .pageWrapper {
   padding: .5em 1em;
 }
 
 .pageHeader {
   margin-bottom: 1.5rem;
-}
-
-.pageHeader:before,
-.pageHeader:after {
-  line-height: 1.5;
-  color: #ccc;
 }
 
 .pageHeader:before {
@@ -146,12 +153,6 @@ a:focus {
   max-width: 600px;
 }
 
-.mainContent:before,
-.mainContent:after {
-  line-height: 1.5;
-  color: #ccc;
-}
-
 .mainContent:before {
   content: "<main>";
 }
@@ -168,12 +169,6 @@ a:focus {
   margin-bottom: 0;
 }
 
-.section:before,
-.section:after {
-  line-height: 1.5;
-  color: #ccc;
-}
-
 .section:before {
   content: "<section>";
 }
@@ -186,7 +181,6 @@ a:focus {
 .section-title:after {
   font-size: 1rem;
   font-weight: 400;
-  color: #ccc;
 }
 .section-title:before {
   content: "<h2>";
@@ -196,8 +190,12 @@ a:focus {
   content: "</h2>";
 }
 
+.section-linkTarget {
+  color: #227942;
+}
+
 .skills-progressBar {
-  color: #BA53DE;
+  color: #c93f38;
 }
 
 .projectsList {
