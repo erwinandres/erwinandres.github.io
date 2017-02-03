@@ -15,17 +15,19 @@ body {
 a {
   background: transparent;
 }
+
 a:link {
   text-decoration: none;
 }
 
+a:link,
 a:visited {
-  color: inherit;
+  color: #4D6DE3;
 }
 
 a:hover {
-  color: #fff;
-  background-color: #000;
+  color: #000;
+  background-color: #4AE3B5;
 }
 
 /* MAIN */
@@ -65,4 +67,50 @@ a:hover {
 
 .mainContent {
   max-width: 600px;
+}
+
+.mainContent:before,
+.mainContent:after {
+  line-height: 1.5;
+  color: #ccc;
+}
+
+.mainContent:before {
+  content: "<main>";
+}
+
+.mainContent:after {
+  content: "</main>";
+}
+
+.section:before,
+.section:after {
+  line-height: 1.5;
+  color: #ccc;
+}
+
+.section:before {
+  content: "<section>";
+}
+
+.section:after {
+  content: "</section>";
+}
+
+.section-title:before,
+.section-title:after {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #ccc;
+}
+.section-title:before {
+  content: "<h2>";
+}
+
+.section-title:after {
+  content: "</h2>";
+}
+
+.skills-progressBar {
+  color: #BA53DE;
 }
