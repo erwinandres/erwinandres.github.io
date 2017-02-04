@@ -2,9 +2,21 @@
 html {
   min-height: 100%;
   font-family: 'Ubuntu Mono', Consolas, Monaco, 'Andale Mono', monospace;
-  font-size: 100%;
+  font-size: 150%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+}
+
+@media (max-width: 60rem) {
+  html {
+    font-size: 125%;
+  }
+}
+
+@media (max-width: 32rem) {
+  html {
+    font-size: 100%;
+  }
 }
 
 body {
@@ -120,6 +132,21 @@ a:focus {
   line-height: 1.5;
   color: #ac6600;
 }
+.pageHeader-title,
+.pageHeader-description,
+.mainContent-section,
+.section-content {
+  margin-left: 1rem;
+}
+
+@media (max-width: 37rem) {
+  .pageHeader-title,
+  .pageHeader-description,
+  .mainContent-section,
+  .section-content {
+    margin-left: 0;
+  }
+}
 
 .pageWrapper {
   padding: .5em 1em;
@@ -138,21 +165,21 @@ a:focus {
 }
 
 .pageHeader-title {
-  margin: 0;
-  margin-left: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 3em;
   line-height: 1;
 }
 
 .pageHeader-description {
-  margin: 0;
-  margin-left: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 1.5em;
   font-style: italic;
 }
 
 .mainContent {
-  max-width: 600px;
+  max-width: 37rem;
 }
 
 .mainContent:before {
@@ -165,7 +192,6 @@ a:focus {
 
 .mainContent-section {
   margin-bottom: 3rem;
-  margin-left: 1rem;
 }
 
 .mainContent-section:last-child {
@@ -180,31 +206,36 @@ a:focus {
   content: "</section>";
 }
 
-.section-content {
-  margin-left: 1rem;
-}
-
 .section-title:before,
 .section-title:after {
   font-size: 1rem;
   font-weight: 400;
 }
 
-/*.section-title:before {
-  content: "<h2>";
-}
-
-.section-title:after {
-  content: "</h2>";
-}*/
-
 .section-linkTarget {
   color: #227942;
 }
 
 .skills-progressBar {
+  display: inline;
   color: #c93f38;
 }
+
+.skills-progressValue {
+  display: none;
+  color: #c93f38;
+}
+
+@media (max-width: 50rem) {
+  .skills-progressBar {
+    display: none;
+  }
+
+  .skills-progressValue {
+    display: inline;
+  }
+}
+
 
 .projectsList {
   list-style: none;
