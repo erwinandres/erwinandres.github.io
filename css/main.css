@@ -139,12 +139,14 @@ a:focus {
 
 .pageHeader-title {
   margin: 0;
+  margin-left: 1rem;
   font-size: 3em;
   line-height: 1;
 }
 
 .pageHeader-description {
   margin: 0;
+  margin-left: 1rem;
   font-size: 1.5em;
   font-style: italic;
 }
@@ -163,6 +165,7 @@ a:focus {
 
 .mainContent-section {
   margin-bottom: 3rem;
+  margin-left: 1rem;
 }
 
 .mainContent-section:last-child {
@@ -177,18 +180,23 @@ a:focus {
   content: "</section>";
 }
 
+.section-content {
+  margin-left: 1rem;
+}
+
 .section-title:before,
 .section-title:after {
   font-size: 1rem;
   font-weight: 400;
 }
-.section-title:before {
+
+/*.section-title:before {
   content: "<h2>";
 }
 
 .section-title:after {
   content: "</h2>";
-}
+}*/
 
 .section-linkTarget {
   color: #227942;
