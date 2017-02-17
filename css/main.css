@@ -243,6 +243,7 @@ a:focus {
 }
 
 .projectsList-item {
+  position: relative;
   margin-bottom: 1.5rem;
 }
 
@@ -252,6 +253,23 @@ a:focus {
 
 .project-title {
   margin-bottom: 0;
+}
+
+.project-image {
+  position: absolute;
+  top: 0;
+  right: -300px;
+}
+
+.project-image-img {
+  width: 180px;
+  height: auto;
+  margin: .5em .5em 1.5em;
+}
+
+.project-image-caption {
+  text-align: center;
+  font-style: italic;
 }
 
 .project-tags {

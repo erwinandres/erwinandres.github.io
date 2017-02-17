@@ -65,8 +65,13 @@
 								<p class="project-tags">PWA</p>
 							</header>
 
-							<p class="project-description">Mi primera aplicación web progresiva: una sencilla y rápida lista TODO.</p>
+							<figure data-image class="project-image">
+								<img class="project-image-img" src="img/tudu.png" width="300" height="300" alt="Tudú app logo">
+								<figcaption class="project-image-caption">Tudú logo</figcaption>
+							</figure>
 
+							<p class="project-description">Mi primera aplicación web progresiva: una sencilla y rápida lista TODO.</p>
+							
 							<footer class="project-footer"><a href="" target="_blank">[Ver app]</a> | <a href="" target="_blank">[Ver código fuente]</a></footer>
 						</li>
 						<li class="projectsList-item project">
@@ -86,5 +91,34 @@
 
 		<footer class="pageFooter"></footer>
 	</div>
+
+<script>
+var containerWidth = getComputedStyle(document.querySelector('[data-image]')).width.slice(0, -2);
+var containerHeight = getComputedStyle(document.querySelector('[data-image]')).height.slice(0, -2);
+var featureElements = document.querySelectorAll('[data-image]');
+
+document.addEventListener('mousemove', function(event) {
+	featureElements.forEach(function(element) {
+		var rx = (containerHeight / 2 - event.clientY) / 50;
+		var	ry = (containerWidth / 2 - event.clientX) / 100;
+		var _dm = 1;
+		var translateX = (ry * 2) / _dm;
+		var translateY = (rx * 2) / _dm;
+		element.style.transform = "matrix(1,0,0,1," + translateX + "," + translateY + ")";
+	});
+});
+
+/*featureElements.forEach(function(element) {
+	element.addEventListener('mousemove', function(event) {
+		var rx = (containerHeight / 2 - event.pageY) / 50,
+			ry = (containerWidth / 2 - event.pageX) / 100;
+
+		_dm = 1;
+		translateX = (ry * 2) / _dm;
+		translateY = (rx * 2) / _dm;
+		element.style.transform = "matrix(1,0,0,1," + translateX + "," + translateY + ")";
+	});
+});*/
+</script>
 </body>
 </html>
