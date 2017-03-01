@@ -258,13 +258,20 @@ a:focus {
 .project-image {
   position: absolute;
   top: 0;
-  right: -300px;
+  left: 25%;
+  margin: 0;
+  opacity: 0;
+  z-index: -1;
+}
+
+.project:hover .project-image {
+  opacity: .8;
 }
 
 .project-image-img {
   width: 180px;
   height: auto;
-  margin: .5em .5em 1.5em;
+  margin: 0;
 }
 
 .project-image-caption {
