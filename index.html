@@ -75,6 +75,20 @@
 						</li>
 						<li class="projectsList-item project">
 							<header class="project-header">
+								<h3 class="project-title">Drafts</h3>
+								<p class="project-tags">Web app</p>
+							</header>
+
+							<figure data-image class="project-image">
+								<img ckass="project-image-img" src="img/drafts-small.png" width="365" height="187" alt="Captura de pantalla de Drafts">
+							</figure>
+
+							<p class="project-description">Sencillo y práctico editor de texto enriquecido.</p>
+
+							<footer class="project-footer"><a href="" target="_blank">[Ver app]</a> | <a href="" target="_blank">[Ver código fuente]</a></footer>
+						</li>
+						<li class="projectsList-item project">
+							<header class="project-header">
 								<h3 class="project-title">TextCSS</h3>							
 								<p class="project-tags">CSS</p>
 							</header>
@@ -92,12 +106,12 @@
 	</div>
 
 <script>
-var containerWidth = getComputedStyle(document.querySelector('[data-image]')).width.slice(0, -2);
-var containerHeight = getComputedStyle(document.querySelector('[data-image]')).height.slice(0, -2);
 var featureElements = document.querySelectorAll('[data-image]');
 
 document.addEventListener('mousemove', function(event) {
 	featureElements.forEach(function(element) {
+		var containerWidth = getComputedStyle(element).width.slice(0, -2);
+		var containerHeight = getComputedStyle(element).height.slice(0, -2);
 		var rx = (containerHeight / 2 - event.clientY) / 50;
 		var	ry = (containerWidth / 2 - event.clientX) / 100;
 		var _dm = 1;
