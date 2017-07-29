@@ -220,6 +220,11 @@ a:focus {
   vertical-align: middle;
 }
 
+.tools-icon {
+  vertical-align: middle;
+  width: 1em;
+  height: 1em;
+}
 
 .projectsList {
   list-style: none;
