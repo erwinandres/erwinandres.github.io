@@ -216,20 +216,13 @@ a:focus {
   color: #227942;
 }
 
-.social-icon {
-  vertical-align: middle;
-  height: 1em;
-  width: 1em;
-}
-
-.skills-icon {
-  vertical-align: middle;
-}
-
+.social-icon,
+.skills-icon,
 .tools-icon {
   vertical-align: middle;
-  width: 1em;
   height: 1em;
+  width: 1em;
+  margin-right: 2px;
 }
 
 .projectsList {
