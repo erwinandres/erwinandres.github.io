@@ -216,6 +216,12 @@ a:focus {
   color: #227942;
 }
 
+.social-icon {
+  vertical-align: middle;
+  height: 1em;
+  width: 1em;
+}
+
 .skills-icon {
   vertical-align: middle;
 }
