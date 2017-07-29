@@ -216,24 +216,8 @@ a:focus {
   color: #227942;
 }
 
-.skills-progressBar {
-  display: inline;
-  color: #c93f38;
-}
-
-.skills-progressValue {
-  display: none;
-  color: #c93f38;
-}
-
-@media (max-width: 50rem) {
-  .skills-progressBar {
-    display: none;
-  }
-
-  .skills-progressValue {
-    display: inline;
-  }
+.skills-icon {
+  vertical-align: middle;
 }
 
 
