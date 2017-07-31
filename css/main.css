@@ -128,14 +128,17 @@ a:focus {
 .section:before,
 .section:after,
 .section-title:before,
-.section-title:after {
+.section-title:after,
+.pageFooter:before,
+.pageFooter:after {
   line-height: 1.5;
   color: #ac6600;
 }
 .pageHeader-title,
 .pageHeader-description,
 .mainContent-section,
-.section-content {
+.section-content,
+.pageFooter-content {
   margin-left: 1rem;
 }
 
@@ -143,7 +146,8 @@ a:focus {
   .pageHeader-title,
   .pageHeader-description,
   .mainContent-section,
-  .section-content {
+  .section-content,
+  .pageFooter-content {
     margin-left: 0;
   }
 }
@@ -180,6 +184,7 @@ a:focus {
 
 .mainContent {
   max-width: 37rem;
+  margin-bottom: 1.5rem;
 }
 
 .mainContent:before {
@@ -269,4 +274,12 @@ a:focus {
 
 .project-tags {
   font-style: italic;
+}
+
+.pageFooter:before {
+  content: "<footer>";
+}
+
+.pageFooter:after {
+  content: "</footer>";
 }
