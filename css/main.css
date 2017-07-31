@@ -223,7 +223,8 @@ a:focus {
 
 .social-icon,
 .skills-icon,
-.tools-icon {
+.tools-icon,
+.footer-icon {
   vertical-align: middle;
   height: 1em;
   width: 1em;
