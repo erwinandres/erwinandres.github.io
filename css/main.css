@@ -243,7 +243,7 @@ a:focus {
   margin-bottom: 0;
 }
 
-.project-image {
+/*.project-image {
   position: absolute;
   top: 0;
   left: 25%;
@@ -265,7 +265,7 @@ a:focus {
 .project-image-caption {
   text-align: center;
   font-style: italic;
-}
+}*/
 
 .project-tags {
   font-style: italic;

@@ -65,12 +65,12 @@
 								<p class="project-tags">PWA</p>
 							</header>
 
-							<figure data-image class="project-image">
-								<img class="project-image-img" src="img/tudu.png" width="300" height="300" alt="Tudú app logo">
-							</figure>
+							<!--<figure data-image class="project-image">
+									<img class="project-image-img" src="img/tudu.png" width="300" height="300" alt="Tudú app logo">
+							</figure>-->
 
 							<p class="project-description">Mi primera aplicación web progresiva: una sencilla y rápida lista TODO.</p>
-							
+
 							<footer class="project-footer"><a href="" target="_blank">[Ver app]</a> | <a href="" target="_blank">[Ver código fuente]</a></footer>
 						</li>
 						<li class="projectsList-item project">
@@ -79,9 +79,9 @@
 								<p class="project-tags">Web app</p>
 							</header>
 
-							<figure data-image class="project-image">
+							<!--<figure data-image class="project-image">
 								<img ckass="project-image-img" src="img/drafts-small.png" width="365" height="187" alt="Captura de pantalla de Drafts">
-							</figure>
+							</figure>-->
 
 							<p class="project-description">Sencillo y práctico editor de texto enriquecido.</p>
 
@@ -93,9 +93,9 @@
 								<p class="project-tags">CSS</p>
 							</header>
 
-							<figure data-image class="project-image">
+							<!--<figure data-image class="project-image">
 								<img ckass="project-image-img" src="img/textcss-small.png" width="512" height="256" alt="Captura de pantalla de Drafts">
-							</figure>
+							</figure>-->
 
 							<p class="project-description">Pequeña librería CSS con estilos base para crear texto legible, adaptativo y con ritmo vertical.</p>
 
@@ -110,32 +110,7 @@
 	</div>
 
 <script>
-var featureElements = document.querySelectorAll('[data-image]');
 
-document.addEventListener('mousemove', function(event) {
-	featureElements.forEach(function(element) {
-		var containerWidth = getComputedStyle(element).width.slice(0, -2);
-		var containerHeight = getComputedStyle(element).height.slice(0, -2);
-		var rx = (containerHeight / 2 - event.clientY) / 50;
-		var	ry = (containerWidth / 2 - event.clientX) / 100;
-		var _dm = 1;
-		var translateX = (ry * 2) / _dm;
-		var translateY = (rx * 2) / _dm;
-		element.style.transform = "matrix(1,0,0,1," + translateX + "," + translateY + ")";
-	});
-});
-
-/*featureElements.forEach(function(element) {
-	element.addEventListener('mousemove', function(event) {
-		var rx = (containerHeight / 2 - event.pageY) / 50,
-			ry = (containerWidth / 2 - event.pageX) / 100;
-
-		_dm = 1;
-		translateX = (ry * 2) / _dm;
-		translateY = (rx * 2) / _dm;
-		element.style.transform = "matrix(1,0,0,1," + translateX + "," + translateY + ")";
-	});
-});*/
 </script>
 </body>
 </html>
