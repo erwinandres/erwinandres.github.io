@@ -290,6 +290,10 @@ a:focus {
 }
 
 @media print {
+  html {
+    font-size: 12pt;
+  }
+
   a {
     color: inherit;
   }
