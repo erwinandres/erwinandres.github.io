@@ -249,6 +249,33 @@ a:focus {
   margin-bottom: 0;
 }
 
+.project-screens {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0 0 1.5rem 0;
+}
+
+@media(max-width: 26rem) {
+  .project-screens {
+    flex-direction: column;
+  }
+}
+
+.project-image {
+  display: inline-block;
+  margin: 0;
+}
+
+.project-image-img {
+  display: block;
+  border: 4px solid #000;
+  background: #fff;
+  background: -webkit-linear-gradient(top, #fff 0px, #fff 16px, #000 16px, #000 32px);
+  background: linear-gradient(to bottom, #fff 0px, #fff 16px, #000 16px, #000 32px);
+  padding-top: 20px;
+}
 /*.project-image {
   position: absolute;
   top: 0;
