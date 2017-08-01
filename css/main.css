@@ -281,6 +281,24 @@ a:focus {
   font-style: italic;
 }
 
+.project-footer-qrs {
+  display: none;
+}
+
+.qr {
+  margin: 0;
+}
+
+.qr-image {
+  display: block;
+}
+
+.qr-caption {
+  font-size: 1em;
+  line-height: 1.5;
+  text-align: center;
+}
+
 .pageFooter:before {
   content: "<footer>";
 }
@@ -296,6 +314,10 @@ a:focus {
 
   a {
     color: inherit;
+  }
+
+  .mainContent {
+    margin: 0 auto;
   }
 
   .section, .project {
@@ -330,5 +352,15 @@ a:focus {
   .project-image-img {
     background: #fff;
     padding: 0;
+  }
+
+  .project-footer-links {
+    display: none;
+  }
+
+  .project-footer-qrs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 }
