@@ -288,3 +288,43 @@ a:focus {
 .pageFooter:after {
   content: "</footer>";
 }
+
+@media print {
+  a {
+    color: inherit;
+  }
+
+  .section, .project {
+    page-break-inside: avoid;
+  }
+
+  .pageFooter {
+    display: none;
+  }
+
+  .pageHeader:before,
+  .pageHeader:after,
+  .mainContent:before,
+  .mainContent:after,
+  .section:before,
+  .section:after,
+  .section-title:before,
+  .section-title:after,
+  .pageFooter:before,
+  .pageFooter:after {
+    display: none;
+  }
+
+  .pageHeader-title,
+  .pageHeader-description,
+  .mainContent-section,
+  .section-content,
+  .pageFooter-content {
+    margin-left: 0;
+  }
+
+  .project-image-img {
+    background: #fff;
+    padding: 0;
+  }
+}
