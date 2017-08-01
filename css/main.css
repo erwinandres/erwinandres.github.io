@@ -231,6 +231,10 @@ a:focus {
   margin-right: 2px;
 }
 
+.project-header {
+  margin-bottom: 1.5rem;
+}
+
 .projectsList {
   list-style: none;
   margin:0;
@@ -250,17 +254,12 @@ a:focus {
 }
 
 .project-screens {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-around;
   list-style: none;
   margin: 0 0 1.5rem 0;
 }
 
-@media(max-width: 26rem) {
-  .project-screens {
-    flex-direction: column;
-  }
+.project-screens-item {
+  display: inline-block;
 }
 
 .project-image {
@@ -269,6 +268,7 @@ a:focus {
 }
 
 .project-image-img {
+  max-width: 100%;
   display: block;
   border: 4px solid #000;
   background: #fff;
@@ -276,29 +276,6 @@ a:focus {
   background: linear-gradient(to bottom, #fff 0px, #fff 16px, #000 16px, #000 32px);
   padding-top: 20px;
 }
-/*.project-image {
-  position: absolute;
-  top: 0;
-  left: 25%;
-  margin: 0;
-  opacity: 0;
-  z-index: -1;
-}
-
-.project:hover .project-image {
-  opacity: .8;
-}
-
-.project-image-img {
-  width: 180px;
-  height: auto;
-  margin: 0;
-}
-
-.project-image-caption {
-  text-align: center;
-  font-style: italic;
-}*/
 
 .project-tags {
   font-style: italic;
