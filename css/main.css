@@ -242,7 +242,7 @@ a:focus {
 
 .projectsList-item {
   position: relative;
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
 }
 
 .projectsList-item:last-child {
