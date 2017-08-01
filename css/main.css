@@ -285,20 +285,6 @@ a:focus {
   display: none;
 }
 
-.qr {
-  margin: 0;
-}
-
-.qr-image {
-  display: block;
-}
-
-.qr-caption {
-  font-size: 1em;
-  line-height: 1.5;
-  text-align: center;
-}
-
 .pageFooter:before {
   content: "<footer>";
 }
@@ -362,5 +348,33 @@ a:focus {
     display: flex;
     justify-content: space-around;
     align-items: center;
+  }
+
+  .qr {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin: 0;
+  }
+
+  .qr-image {
+    display: block;
+    width: 60px;
+    height: 60px;
+  }
+
+  .qr-caption {
+    font-size: 10pt;
+    line-height: 1.5;
+  }
+
+  .qr-caption-title {
+    margin-bottom: 0;
+    font-size: 1em;
+  }
+
+  .qr-caption-link {
+    font-style: italic;
+    word-break: break-all;
   }
 }
