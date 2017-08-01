@@ -335,6 +335,10 @@ a:focus {
     margin-left: 0;
   }
 
+  .projectsList-item {
+    margin-bottom: 1.5rem;
+  }
+
   .project-image-img {
     background: #fff;
     padding: 0;
