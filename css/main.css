@@ -156,6 +156,15 @@ a:focus {
   padding: .5em 1em;
 }
 
+.skipLinks-link {
+  position: absolute;
+  left: -9999em;
+}
+
+.skipLinks-link:focus {
+  position: static;
+}
+
 .pageHeader {
   max-width: 37rem;
   margin-bottom: 1.5rem;
