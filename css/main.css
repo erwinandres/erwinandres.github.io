@@ -117,7 +117,7 @@ a:focus {
 }
 
 a:focus {
-  outline: thin dotted;
+  outline: 3px dashed #C93F38;
 }
 
 /* MAIN */
