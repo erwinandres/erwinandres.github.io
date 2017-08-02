@@ -231,6 +231,10 @@ a:focus {
   display: none;
 }
 
+.section-email {
+  word-break: break-word;
+}
+
 .social-icon,
 .skills-icon,
 .tools-icon,
@@ -355,7 +359,7 @@ a:focus {
 
   .section-linkTarget {
     display: inline;
-    word-break: break-all;
+    word-break: break-word;
     color: #227942;
   }
 
@@ -403,6 +407,6 @@ a:focus {
 
   .qr-caption-link {
     font-style: italic;
-    word-break: break-all;
+    word-break: break-word;
   }
 }
