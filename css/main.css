@@ -228,7 +228,7 @@ a:focus {
 }
 
 .section-linkTarget {
-  color: #227942;
+  display: none;
 }
 
 .social-icon,
@@ -351,6 +351,12 @@ a:focus {
   .section-content,
   .pageFooter-content {
     margin-left: 0;
+  }
+
+  .section-linkTarget {
+    display: inline;
+    word-break: break-all;
+    color: #227942;
   }
 
   .projectsList-item {
